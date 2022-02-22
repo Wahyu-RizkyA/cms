@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// prak 1
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/', function () {
     echo "‘Hi! Selamat Datang di Website Laravel";
@@ -31,6 +32,14 @@ Route::get('/about', function () {
 Route::get('/artikel/{id}', function ($id) { 
     echo "Ini merupakan halaman artikel dengan ID  = $id"; 
    });
+
+
+//    prak 2
+Route::get('/',[PageController::class,'index']);
+
+Route::get('/about',[PageController::class,'about']);
+
+Route::get('/artikel/{id}',[PageController::class,'artikel']);
 
 
 
