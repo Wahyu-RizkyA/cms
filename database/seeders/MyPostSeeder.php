@@ -15,37 +15,37 @@ class MyPostSeeder extends Seeder
     public function run()
     {
         DB::table('posts')->insert([[
-            'nama' => 'Basket Ball',
+            'nama' => 'Basket Ball 1',
             'harga' => 50,
             'foto' => 'basketball.png',
         ],
             [
         
-            'nama' => 't-shirt',
-            'harga' => 50,
+            'nama' => 't-shirtaa 1',
+            'harga' => 40,
             'foto' => 't-shirt.png',
         ],
 [
         
-            'nama' => 'game',
-            'harga' => 50,
+            'nama' => 'gameaa 1',
+            'harga' => 30,
             'foto' => 'game.png',
         ],
 [
         
-            'nama' => 'Basket Ball',
-            'harga' => 50,
+            'nama' => 'Basket Ball 2',
+            'harga' => 20,
             'foto' => 'basketball.png',
         ],
 [
         
-            'nama' => 't-shirt',
-            'harga' => 50,
+            'nama' => 't-shirt 2',
+            'harga' => 110,
             'foto' => 't-shirt.png',
         ],
         [
-            'nama' => 'game',
-            'harga' => 50,
+            'nama' => 'game 2',
+            'harga' => 10,
             'foto' => 'game.png',
             ]
         
