@@ -40,13 +40,12 @@
          <div class="loader"><img src="{{url('assets/images/loading.gif')}}" alt="#" /></div>
       </div> 
 
-      <!-- end loader>
+      <!-- end loader>-->
 
       
         <!-- header -->
         <header class="section">
          <!-- header inner -->
-
 
          <div class="header">
             <div class="container">
@@ -80,6 +79,7 @@
          <!-- end header inner -->
       </header>
       <!-- end header -->
+      
        @yield('content')
 
 

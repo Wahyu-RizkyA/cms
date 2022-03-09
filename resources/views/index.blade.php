@@ -91,32 +91,32 @@
          <div class="clothes_main section ">
           <div class="container">
             <div class="row">
+               @foreach($data as $d)
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                   <div class="sport_product">
-                     <figure><img src="{{url('assets/images/basketball.png')}}" alt="img"/></figure>
-                    <h3> $<strong class="price_text">50</strong></h3>
-                     <h4>basket ball</h4>
+                     <figure><img src="{{url('assets/images/'. $d->foto)}}" alt="img"/></figure>
+                    <h3> $<strong class="price_text">{{$d->harga}}</strong></h3>
+                     <h4>{{$d->nama}}</h4>
                   </div>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+               @endforeach
+               
+               <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                   <div class="sport_product">
                      <figure><img src="{{url('assets/images/t-shirt.png')}}" alt="img"/ ></figure>
                     <h3> $<strong class="price_text">50</strong></h3>
                      <h4> T-Shirt</h4>
                   </div>
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+               </div> -->
+               <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
                   <div class="sport_product">
                      <figure><img src="{{url('assets/images/game.png')}}" alt="img"/></figure>
                      <h3> $<strong class="price_text">50</strong></h3>
                      <h4>Game</h4>
                   </div>
                </div>
-    
-        
-       
-         
-               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+     -->
+               <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                   <div class="sport_product">
                      <figure><img src="{{url('assets/images/basketball.png')}}" alt="img"/"></figure>
                    <h3> $<strong class="price_text">50</strong></h3>
@@ -136,7 +136,7 @@
                     <h3> $<strong class="price_text">50</strong></h3>
                      <h4>Game</h4>
                   </div>
-               </div>
+               </div> -->
              </div>
             </div>
            </div>
@@ -423,7 +423,7 @@
     </div>
 
       <!-- end Contact Us-->
- 
+      
 
       <!-- Javascript files-->
       <script src="{{url('assets/js/jquery.min.js')}}"></script>
