@@ -5,7 +5,14 @@
         <div class="alert alert-success"> 
             <p>{{ $message }}</p> 
         </div> 
-    @endif 
+    @endif
+
+    <div class="row">
+        <div style="margin:0px 0px 0px 70px;">
+            <a class="btn btn-success" href="{{ route('cetak_pdf') }}"> Cetak PDF </a>
+        </div>
+    </div><br/> 
+
     <table class="table table-bordered" style="width:95%;margin: 0 auto;"> 
     <tr> 
         <th>Judul</th> 

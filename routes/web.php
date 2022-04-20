@@ -21,6 +21,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::resource('articles', ArticleController::class);
 
+Route::get('/article/cetak_pdf', [ArticleController::class, 'cetak_pdf'])->name('cetak_pdf');
+
+
 Auth::routes();
 Route::get('/',[PostController::class, 'index']);
 Route::get('/home', [App\Http\Controllers\homeController::class, 'index'])->name('home');
