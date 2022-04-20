@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 // Auth::Routes();
 
+Route::resource('articles', ArticleController::class);
 
 Auth::routes();
 Route::get('/',[PostController::class, 'index']);
